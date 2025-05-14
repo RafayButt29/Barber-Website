@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+
+.main {
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(230, 192, 28, 0.568)
+    ),
+    url(barber-back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.head {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.logo {
+  margin-left: 40px;
+  color: white;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.btn {
+  margin-right: 40px;
+  padding: 6px 20px;
+  border: none;
+  background: goldenrod;
+  border-radius: 12px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+}
+.btn:hover {
+  color: goldenrod;
+  background-color: white;
+}
+
+.section {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 4rem;
+}
+.section p {
+  color: white;
+}
+.section .content {
+  margin: 40px 0px;
+}
+
+.btn-2 {
+  background-color: transparent;
+  color: white;
+  padding: 8px 0px;
+  width: 140px;
+  margin: 8px;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+}
+/* Menu Box */
+
+.menu-box {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(255 207 0 / 81%));
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 0.7s ease-in-out;
+}
+nav ul li {
+  cursor: pointer;
+  list-style: none;
+  color: white;
+  margin: 75px 30px;
+}
+
+/* Second part */
+
+.feature {
+  padding: 70px 0px;
+}
+
+.feature-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.feature-title p {
+  z-index: 1;
+
+  color: goldenrod;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+.feature-title p::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(goldenrod, white);
+  transform: rotate(10deg);
+  z-index: -1;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.feature .feature-title h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.feature-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.feature1 {
+  flex-basis: 50%;
+}
+.feature-image {
+  flex-basis: 50%;
+}
+.feature h1 {
+  text-align: left;
+  color: goldenrod;
+  margin-bottom: 20px;
+}
+.feature-icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.feature-icon .fa-solid {
+  width: 50px;
+  height: 50px;
+  border: 0.5px solid;
+  border-radius: 4px;
+  line-height: 50px;
+  font-size: 30px;
+  color: goldenrod;
+}
+.feature-text {
+  text-align: initial;
+  margin-left: 20px;
+}
+
+/* Third section */
+
+#section {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.service-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.service-image {
+  text-align: center;
+  color: white;
+  flex-basis: 48%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.service-image img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+.overlay {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(230, 192, 28, 0.568));
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.service-image:hover .overlay {
+  opacity: 1;
+}
+
+.img-desc {
+  width: 80%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.img-desc hr {
+  border: 0;
+  height: 3px;
+  width: 140px;
+  background: white;
+  margin: 15px auto;
+}
+.service-image:hover .img-desc {
+  opacity: 1;
+  bottom: 40%;
+}
+
+/* Testimonial */
+
+#testimonial {
+  margin-top: 35px;
+  width: 100%;
+  padding: 75px 0;
+}
+.testimonial-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testimonial-text {
+  flex-basis: 28%;
+  box-shadow: 0px 10px 20px 3px goldenrod;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.testimonial-text p {
+  font-size: 15px;
+}
+.testimonial-text:hover {
+  transform: translateY(-10px);
+}
+
+/* FOOTER */
+
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background: #efefef;
+}
+.footer-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.right-footer,
+.left-footer {
+  flex-basis: 48%;
+}
+.right-footer {
+  text-align: right;
+}
+.footer-row h1 {
+  margin-bottom: 10px;
+}
+.footer-row p {
+  line-height: 35px;
+}
